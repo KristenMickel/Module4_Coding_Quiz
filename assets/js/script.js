@@ -64,7 +64,7 @@ var quizQuestions = [{
     correctAnswer: "d"},
 ];
 
-//global variables
+//Declare Global Variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
 var timeLeft = 30;
@@ -89,8 +89,6 @@ function generateQuizQuestion(){
     buttonC.innerHTML = currentQuestion.choiceC;
     buttonD.innerHTML = currentQuestion.choiceD;
 };
-
-//start quiz function starts the TimeRanges, hides the start button, and displays the first quize question.
 
 //The "startQuiz" function calls the "generateQuizQuestion" function and starts a decrementing timer functionw which counts down the amount of time allowed to answer each question.
 //This is being driven by the setInterval method which is a function that accepts another function as a parameter.
@@ -124,9 +122,6 @@ function showScore(){
     bestscoreInputName.value = "";
     total_scoreEl.innerHTML = "Your score is " + score + " divided by" + quizQuestions.length;
 }
-
-//On click of the submit button, we run the function highscore that saves and stringifies the array of high scores already saved in local stoage
-//as well as pushing the new user name and score into the array we are saving in local storage. Then it runs the function to show high scores.
 
 //I used the “addEventListener()” method to set up an element to listen for a the click of an event.
 //Then, pass in the "highscore" function that I want it to execute when the button is clicked.
