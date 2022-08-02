@@ -1,0 +1,152 @@
+/*Root Selector*/
+:root{
+    background-color: pink;
+    }
+    
+/*Element Selectors*/
+    li{
+        padding-bottom: 3px;
+        color: darkmagenta;
+        text-shadow: 1.5px 1px 3px darkmagenta;
+        list-style-type: none;
+    }
+    
+    p{
+        color: darkmagenta;
+        text-align: center;
+        font-size: xx-large;
+        font-family:'Courier New', Courier, monospace;
+    }
+    
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -.5rem;
+    }
+    
+    input{
+        text-align: center;
+    }
+    
+    button {
+        display: inline-block;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: pink;
+        border-radius: 10px;
+        border: 3px double darkmagenta;
+        color: darkmagenta;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 200px;
+        margin-top: 3px;
+    }
+
+/*Class Selectors*/
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    
+    button:hover{
+        box-shadow: 4px 3px 6px pink;
+    }
+
+/*ID Selectors*/
+    #starting_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #timer{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: pink;
+        color: darkmagenta;
+        font-size: x-large;
+        text-shadow: .5px .5px darkmagenta;
+        text-align: center;
+    }
+    
+    #coding_quiz {
+        display: none;
+    }
+    
+    #result {
+        display: none;
+    }
+    
+    #game_finished {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #highScore{
+        height: 1.5rem;
+        border: groove 2px;
+    }
+    
+    #best-scorePage{
+        display: none;
+        width: 50%;
+        border: solid;
+        border-color: darkmagenta;
+        border-bottom-style: groove;
+        padding-bottom: .3rem;
+        background: pink;
+    }
+    
+    #bestscore-header{  
+        display:flex;
+        justify-content: space-around;
+        border-bottom-style: outset;
+        margin-bottom: .5rem;
+        background-color: pink;
+        color: darkmagenta;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #bestscoreContainer{
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #players_name{
+        margin: .5rem;
+        height: 1.75rem;
+    }
+    
+    #bestscore-player{
+        display: inline-block;
+        padding-left: 9.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    #bestscore-score{
+        float: right;
+        padding-right: 8.75rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    #total_score{
+        padding-bottom: 0.5rem;
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    #gameover_buttons{
+        display: none;
+    }

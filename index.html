@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM Coding Challenge Q&A</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+</head>
+<body>
+    <main class="container">
+        <section id="starting_page">
+        <button id="starting_button">Start Coding Challenge</button>
+        </section>
+
+        <section id="coding_quiz">
+            <article id="timer">Time Remaining </article>
+                <article id="questions"><p>Coding Questions</p></article>
+                    <button id="a" onclick="compareAnswer('a')">A</button>
+                    <button id="b" onclick="compareAnswer('b')">B</button>
+                    <button id="c" onclick="compareAnswer('c')">C</button>
+                    <button id="d" onclick="compareAnswer('d')">D</button>
+                <article id="result"></article>
+        </section>
+
+        <section id="game_finished">
+            <article id="total_score"></article>
+            <input type="text" size = "40" placeholder="Type in your name" name="player_nm" id="players_name"/>
+            <button id="submitScore">Submit Score</button>
+        </section>
+
+        <section id=bestscoreContainer>
+            <section id="best-scorePage">
+                <header id="bestscore-header">
+                    <h3>Player Name</h3>
+                    <h3>Score</h3>
+                </header>
+                <article id = "bestscore-player"></article>
+                <article id = "bestscore-score"></article>
+            </section>
+            <section id="gameover_buttons">
+                <button id="redo" onclick="play_quiz_again()">Redo!</button>
+                <button id="clear_the_score" onclick="clearScore()">Clear the Score!</button>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="assets\js\script.js"></script>
+
+</body>
+</html>
